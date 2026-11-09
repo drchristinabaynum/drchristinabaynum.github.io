@@ -1,0 +1,345 @@
+[
+  {
+    "objectID": "technical-exercise.html",
+    "href": "technical-exercise.html",
+    "title": "Interpreting fictional counting data",
+    "section": "",
+    "text": "This original proposed activity has not been taught and is not an institutional course or operating procedure. Every number is fictional. No radiation source, instrument, employer record, or laboratory activity is required."
+  },
+  {
+    "objectID": "technical-exercise.html#audience-and-outcomes",
+    "href": "technical-exercise.html#audience-and-outcomes",
+    "title": "Interpreting fictional counting data",
+    "section": "Audience and outcomes",
+    "text": "Audience and outcomes\nAudience: upper-division undergraduates beginning health physics. Prerequisites: algebra, unit conversion, square roots, and an introductory explanation of variance and independent random variables. Duration: 60 minutes plus 20 minutes for individual completion. Use a calculator or accessible spreadsheet.\nLearners will calculate gross, background, and net count rates; propagate independent counting uncertainties; compare precision without claiming accuracy; and explain the limits of a signed net estimate."
+  },
+  {
+    "objectID": "technical-exercise.html#student-handout",
+    "href": "technical-exercise.html#student-handout",
+    "title": "Interpreting fictional counting data",
+    "section": "Student handout",
+    "text": "Student handout\n\nModel\nGross counts include a signal plus background. Each gross/background pair contains separate independent Poisson counts with constant expected rates during the intervals. Assume the background rate represents the background component of its paired gross record. Times are exact in minutes. Use each observed count as the estimate of its Poisson variance. This plug-in uncertainty estimate is not an exact confidence interval.\nFor gross count \\(G\\) over \\(t_g\\) minutes and background count \\(B\\) over \\(t_b\\) minutes:\n\\[R_g=G/t_g,\\qquad R_b=B/t_b,\\qquad R_n=R_g-R_b.\\]\nThe estimated standard uncertainty from counting statistics alone is:\n\\[u(R_n)=\\sqrt{G/t_g^2+B/t_b^2}.\\]\nRates and their standard uncertainties are in counts per minute, or cpm. Subtracting the estimated background does not remove its uncertainty: independent variance contributions add. Background subtraction and propagation are discussed in DOE Module 2.03, sections F–G. The linear uncorrelated-input rule is described in NIST’s uncertainty guidance.\n\n\nFictional records\nEach row has its own independent background record; do not pool or reuse background records.\n\n\n\n\n\n\n\n\n\n\nRecord\nGross counts G\nGross time in min\nBackground counts B\nBackground time in min\n\n\n\n\nA\n900\n5\n400\n10\n\n\nB\n3600\n20\n1600\n40\n\n\nC\n180\n5\n400\n10\n\n\n\n\n\nQuestions\n\nCalculate gross, background, and net rates and the net standard uncertainty for every row. Show one full substitution with units. Retain extra digits during calculation; report final rates and uncertainties to one decimal place.\nFor A and B, calculate \\(100u(R_n)/|R_n|\\). Which has lower relative counting uncertainty? Explain the effect of the fourfold times in this constructed example. Does this establish greater accuracy?\nExplain the negative net estimate for C, retaining its sign. Do not replace it with zero or call it negative physical emissions.\nWrite a 60–100-word explanation for a non-specialist that reports A and states at least two interpretation limits, including whether a dose can be calculated.\n\nNo response calibration, radiation type or energy, or exposure context is supplied. Instrument effects, geometry, timing uncertainty, and background variability are outside the model. Do not infer dose, declare presence or absence, set a detection limit, assess compliance, or recommend an operational action."
+  },
+  {
+    "objectID": "technical-exercise.html#suggested-60-minute-sequence",
+    "href": "technical-exercise.html#suggested-60-minute-sequence",
+    "title": "Interpreting fictional counting data",
+    "section": "Suggested 60-minute sequence",
+    "text": "Suggested 60-minute sequence\n\n\n\n\n\n\n\nTime\nActivity\n\n\n\n\n0–10 minutes\nReview rates, Poisson assumptions, and units\n\n\n10–20 minutes\nModel rate calculation with a separate simple example\n\n\n20–40 minutes\nSolve A–C individually or in pairs\n\n\n40–50 minutes\nDiscuss precision and the negative estimate\n\n\n50–60 minutes\nDraft the communication note and identify overclaims"
+  },
+  {
+    "objectID": "technical-exercise.html#worked-answers",
+    "href": "technical-exercise.html#worked-answers",
+    "title": "Interpreting fictional counting data",
+    "section": "Worked answers",
+    "text": "Worked answers\nFor A, \\(R_n=900/5-400/10=180-40=140\\) cpm.\n\\[u(R_n)=\\sqrt{900/5^2+400/10^2}=\\sqrt{36+4}=6.3246\\ \\mathrm{cpm}.\\]\nThe variance terms are in cpm squared in this counting model. The square root returns cpm. Report 140.0 ± 6.3 cpm, with ± representing one estimated standard uncertainty from counting alone, not a specified confidence interval.\n\n\n\n\n\n\n\n\n\n\nRecord\nGross rate cpm\nBackground rate cpm\nNet rate cpm\nStandard uncertainty cpm\n\n\n\n\nA\n180.0\n40.0\n140.0\n6.3\n\n\nB\n180.0\n40.0\n140.0\n3.2\n\n\nC\n36.0\n40.0\n−4.0\n3.3\n\n\n\nFor B, \\(u=\\sqrt{3600/20^2+1600/40^2}=\\sqrt{10}=3.1623\\) cpm. Relative uncertainties are 4.52% for A and 2.26% for B. With identical observed rates and fourfold times, this model gives half the counting standard uncertainty. It does not show removal of bias or establish greater accuracy.\nFor C, \\(u=\\sqrt{180/5^2+400/10^2}=\\sqrt{11.2}=3.3466\\) cpm. Report −4.0 ± 3.3 cpm. Independent fluctuations can produce a gross rate below the estimated background. The signed subtraction result is not a negative physical emission rate. No validated presence/absence decision rule is provided.\nExample communication note:\n\nFictional record A gives a background-subtracted rate of 140.0 cpm with an estimated counting standard uncertainty of 6.3 cpm. The model assumes independent Poisson counts, fixed times, and representative background. It includes counting variation but excludes calibration and other instrument effects. Counts per minute describe recorded events per unit time; the information supplied does not establish dose or support a safety or compliance conclusion. Smaller counting uncertainty alone would not establish greater accuracy."
+  },
+  {
+    "objectID": "technical-exercise.html#proposed-rubric",
+    "href": "technical-exercise.html#proposed-rubric",
+    "title": "Interpreting fictional counting data",
+    "section": "Proposed rubric",
+    "text": "Proposed rubric\n\n\n\n\n\n\n\n\nCriterion\nPoints\nFull-credit evidence\n\n\n\n\nRates and units\n4\nCorrect gross/background/net rates and clear units\n\n\nUncertainty\n6\nBoth variance terms, correct squared times, square root, and uncertainty meaning\n\n\nPrecision comparison\n4\nCorrect A/B percentages, time explanation, and distinction from accuracy\n\n\nSigned estimate\n3\nRetains C’s sign and explains it without a detection claim\n\n\nCommunication\n3\nClear note with assumptions and no unsupported dose or operational inference\n\n\nTotal\n20\n\n\n\n\nGive partial credit for a correct method with a carried arithmetic error; accept equivalent rounding near the unrounded answers."
+  },
+  {
+    "objectID": "technical-exercise.html#accessible-individual-option",
+    "href": "technical-exercise.html#accessible-individual-option",
+    "title": "Interpreting fictional counting data",
+    "section": "Accessible individual option",
+    "text": "Accessible individual option\nAll data are selectable text, equations, and a labeled table; no color or equipment manipulation is required. Plain-text formulas are net = G/tg - B/tb and uncertainty = sqrt(G/tg^2 + B/tb^2). Learners may submit a text solution or accessible spreadsheet with formulas and a written interpretation. Individual written work substitutes for pair discussion without changing the outcomes or rubric. Formal accommodations follow the offering institution’s actual process.\nThe DOE handbook is a historical technical reading, not current legal or site guidance. The fictional data, questions, worked answers, and rubric are newly composed educational examples."
+  },
+  {
+    "objectID": "syllabus-evaluation.html",
+    "href": "syllabus-evaluation.html",
+    "title": "Evaluating safety education",
+    "section": "",
+    "text": "This is an original course design example, not a course Christina has taught or an approved institutional offering."
+  },
+  {
+    "objectID": "syllabus-evaluation.html#course-purpose",
+    "href": "syllabus-evaluation.html#course-purpose",
+    "title": "Evaluating safety education",
+    "section": "Course purpose",
+    "text": "Course purpose\nIntroduce program evaluation through radiation safety education examples. Students distinguish participation, learning, and application, then design a modest evaluation that respects the limits of its evidence."
+  },
+  {
+    "objectID": "syllabus-evaluation.html#measurable-learning-outcomes",
+    "href": "syllabus-evaluation.html#measurable-learning-outcomes",
+    "title": "Evaluating safety education",
+    "section": "Measurable learning outcomes",
+    "text": "Measurable learning outcomes\n\nFormulate an answerable evaluation question.\nDistinguish process measures from learning and application outcomes.\nBuild an assessment aligned with a stated learning outcome.\nIdentify threats to interpretation in a fictional evaluation design.\nExplain privacy, research approval, and conflict-of-interest issues before data collection.\nPresent an evaluation plan with explicit limitations."
+  },
+  {
+    "objectID": "syllabus-evaluation.html#proposed-sequence",
+    "href": "syllabus-evaluation.html#proposed-sequence",
+    "title": "Evaluating safety education",
+    "section": "Proposed sequence",
+    "text": "Proposed sequence\n\n\n\nModule\nFocus\nApplied work\n\n\n\n\n1\nPurpose and evaluation questions\nWrite a focused question\n\n\n2\nOutcomes and measures\nBuild an outcome map\n\n\n3\nAssessment alignment\nDraft and critique an assessment\n\n\n4\nDesign and interpretation\nCompare fictional study designs\n\n\n5\nEthics and independence\nIdentify approvals and conflicts\n\n\n6\nEvaluation proposal\nPresent a bounded plan"
+  },
+  {
+    "objectID": "syllabus-evaluation.html#assessment-design",
+    "href": "syllabus-evaluation.html#assessment-design",
+    "title": "Evaluating safety education",
+    "section": "Assessment design",
+    "text": "Assessment design\nA question brief, outcome map, assessment critique, and final proposal assess progress toward the learning outcomes. Feedback addresses the match between the question, measure, and conclusion. Any real data collection would require the appropriate institutional review and permission; the proposed course can use entirely fictional data.\nThe offering department would determine course level, prerequisites, grading weights, readings, and institutional policies."
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Connect with Christina on LinkedIn\nFor academic collaboration and teaching inquiries, connect through LinkedIn.\nResearcher identifier: ORCID 0009-0006-7431-3853."
+  },
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "The following original samples illustrate proposed instruction. They are not courses Christina has taught or evidence of measured teaching effectiveness.\n\nApplied radiation protection syllabus\nEvaluating safety education syllabus\nCase lesson on attendance and learning\nTechnical exercise with fictional measurements"
+  },
+  {
+    "objectID": "teaching.html#teaching-portfolio",
+    "href": "teaching.html#teaching-portfolio",
+    "title": "Teaching",
+    "section": "",
+    "text": "The following original samples illustrate proposed instruction. They are not courses Christina has taught or evidence of measured teaching effectiveness.\n\nApplied radiation protection syllabus\nEvaluating safety education syllabus\nCase lesson on attendance and learning\nTechnical exercise with fictional measurements"
+  },
+  {
+    "objectID": "teaching.html#teaching-experience",
+    "href": "teaching.html#teaching-experience",
+    "title": "Teaching",
+    "section": "Teaching experience",
+    "text": "Teaching experience\nChristina has served as Adjunct Professor at Orangeburg-Calhoun Technical College since 2024. She develops and delivers technical instruction in classroom and learning management system environments. Her work includes applied learning activities, assessment of student performance, constructive feedback, and alignment of instructional materials with established course outcomes.\nHer university radiation safety role also includes education and live webinar training."
+  },
+  {
+    "objectID": "teaching.html#octech-courses-taught-and-assigned",
+    "href": "teaching.html#octech-courses-taught-and-assigned",
+    "title": "Teaching",
+    "section": "OCtech courses taught and assigned",
+    "text": "OCtech courses taught and assigned\nCourse titles and terms reflect the confirmed teaching record and assignments at Orangeburg-Calhoun Technical College.\n\nPrevious teaching\n\n\n\nCourse\nTerms\n\n\n\n\nIMT-210 — Basic Industrial Skills I\n2024 Fall1; 2025 Fall1\n\n\nIMT-131 — Hydraulics and Pneumatics\n2024 Fall1; 2025 Fall1\n\n\nEET-113 — Electrical Circuits I\n2024 Fall2; 2025 Fall2\n\n\nEEM-140 — National Electrical Code\n2025 Spring2\n\n\nEGR-130 — Engr. Tech. App. & Prog.\n2026 Spring2\n\n\n\n\n\nFall 2026 teaching\n\n\n\nCourse\nTerms\n\n\n\n\nIMT-210 — Basic Industrial Skills I\n2026 Fall2\n\n\nIMT-131 — Hydraulics and Pneumatics\n2026 Fall1\n\n\nEGR-130 — Engr. Tech. App. & Prog.\n2026 Fall2\n\n\n\nFall 2026 teaching is shown separately from previous terms.\n\n\nUpcoming assignments\nConfirmed upcoming assignments: EGR-130 for 2027 Spring1 and EET-113 for 2027 Spring2. These are future teaching assignments."
+  },
+  {
+    "objectID": "teaching.html#proposed-teaching-approach",
+    "href": "teaching.html#proposed-teaching-approach",
+    "title": "Teaching",
+    "section": "Proposed teaching approach",
+    "text": "Proposed teaching approach\nI aim to connect technical concepts with the decisions learners encounter in practice. A lesson should make its learning outcomes clear, give students a structured opportunity to apply the material, and use feedback to identify where understanding needs to improve.\nIn a proposed health physics lesson, I would ask learners to explain their reasoning, identify information that is missing, and distinguish a justified conclusion from an assumption. Assessment would consider both technical accuracy and the clarity of that reasoning.\nI would use a short initial response to identify misconceptions, give learners an opportunity to discuss and revise an explanation, and close with an individual assessment tied to the lesson’s objective. A rubric would make the basis for feedback visible. This proposed sequence is illustrated in the fictional samples above."
+  },
+  {
+    "objectID": "teaching.html#sample-case-based-lesson",
+    "href": "teaching.html#sample-case-based-lesson",
+    "title": "Teaching",
+    "section": "Sample case-based lesson",
+    "text": "Sample case-based lesson\nProposed instructional example. This fictional scenario is not drawn from an employer, student, incident, or facility.\nTopic: Evaluating a radiation safety training plan.\nLearning outcomes: Identify the information needed to evaluate a training plan; distinguish attendance from evidence of learning; propose a measurable learning assessment.\nScenario: A fictional teaching laboratory records training attendance but has no assessment of whether learners can explain the procedures presented. A supervisor asks whether attendance records establish that the training is effective.\nActivity: In small groups, students list what the available evidence supports, identify unanswered questions, and design one short assessment tied to a stated learning outcome. Groups then explain the limits of their proposal.\nAssessment: An individual exit response states one conclusion supported by the scenario, one missing piece of evidence, and one measurable assessment item. A proposed rubric considers evidence use, alignment with the learning outcome, and clarity.\nThe sample materials demonstrate proposed design choices. They do not establish learner outcomes or substitute for course evaluations, peer observations, or other evidence from instruction already delivered."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Christina Baynum, EdD",
+    "section": "",
+    "text": "Academic portfolio\nChristina Baynum brings experience in university radiation safety, technical teaching, and military health physics to questions about how radiation protection programs are taught and evaluated.\nShe serves as Associate Radiation Safety Officer at the University of South Carolina and Adjunct Professor at Orangeburg-Calhoun Technical College. Her education includes an MS in Health Physics and an EdD in Public Health Policy.\nHer proposed research agenda connects radiation safety training, program evaluation, and public health policy. Her doctoral scholarly project focused on standardized in-person safety training for university X-ray operations."
+  },
+  {
+    "objectID": "index.html#from-practice-to-inquiry",
+    "href": "index.html#from-practice-to-inquiry",
+    "title": "Christina Baynum, EdD",
+    "section": "From practice to inquiry",
+    "text": "From practice to inquiry\nHer work connects operational health physics with education: explaining technical requirements, developing instruction, and considering how training can support practical decisions. Her previous appointment was Nuclear Medical Science Officer in the United States Army, 2022–24.\nExplore research interests · View teaching portfolio · Read the CV"
+  },
+  {
+    "objectID": "index.html#professional-affiliation",
+    "href": "index.html#professional-affiliation",
+    "title": "Christina Baynum, EdD",
+    "section": "Professional affiliation",
+    "text": "Professional affiliation\nChristina is co-founder of CurieLedger, an early-stage radiation safety recordkeeping software company. Research involving related tools or program metrics could create a potential conflict of interest requiring institutional review and disclosure."
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "ORCID 0009-0006-7431-3853"
+  },
+  {
+    "objectID": "research.html#doctoral-scholarly-project",
+    "href": "research.html#doctoral-scholarly-project",
+    "title": "Research",
+    "section": "Doctoral scholarly project",
+    "text": "Doctoral scholarly project\nImproving Radiation Safety Compliance Through Standardized In-Person Safety Training for University X-ray Operators\nEdD, Public Health Policy, Nebraska Methodist College, July 2026.\nBaynum, Christina Hewett. (2026). Improving Radiation Safety Compliance Through Standardized In-Person Safety Training for University X-ray Operators. Doctoral scholarly project, Nebraska Methodist College.\nRead the full doctoral project on the college’s website\nThe project evaluated a one-hour standardized in-person X-ray safety training session using pre- and post-training knowledge assessments and confidence surveys. Eight participants completed paired knowledge assessments. The report describes mean scores increasing from 52.5% before training to 100% shortly afterward, with a paired-samples result of t(7) = 6.16, p &lt; .001.\nThese are short-term assessment findings from a small group without a comparison group. Confidence outcomes could not be adequately evaluated because only one post-training confidence survey was returned. The design did not establish long-term retention, changes in workplace performance, improved regulatory compliance, or superiority to online training. The report is a publicly available doctoral scholarly project; it is not presented here as a peer-reviewed journal article.\nThis work provides a starting point for questions about how educational measures should match the conclusions a study can support. The proposed directions below build on that focus; they do not imply that the doctoral project validated a radiation protection program or established the superiority of one teaching format."
+  },
+  {
+    "objectID": "research.html#preparation",
+    "href": "research.html#preparation",
+    "title": "Research",
+    "section": "Preparation",
+    "text": "Preparation\nChristina’s graduate preparation combines health physics with public health policy. Her MS coursework included radiation physics, radiation dosimetry, radiation biophysics, operational health physics, and radiation instrumentation. Her doctoral coursework included biostatistics, epidemiology, instructional methods, and curriculum planning and evaluation.\n\n\n\n\nChristina Baynum in a laboratory setting.\n\n\n\n\n\nChristina Baynum in academic regalia."
+  },
+  {
+    "objectID": "research.html#proposed-research-agenda",
+    "href": "research.html#proposed-research-agenda",
+    "title": "Research",
+    "section": "Proposed research agenda",
+    "text": "Proposed research agenda\nThe following directions describe future research interests. They are not completed studies, funded projects, or established partnerships.\n\nA proposed first study\nProposed research concept.\nQuestion: How can an assessment distinguish recall of radiation safety information from reasoning about a fictional scenario?\nApproach: An initial phase would review educational evidence, define a narrow learning objective, and draft aligned knowledge and scenario questions. A proposed rubric would distinguish a correct answer from an explanation supported by the information available. Expert review and a limited pilot, if approved and feasible, would examine whether the questions and scoring criteria are understandable and useful.\nFeasibility: The design would begin with original fictional materials. Participant recruitment, any data collection, and use of responses would depend on institutional review, permission, and appropriate arrangements for voluntary participation. No student group, employer data, or research partner is committed.\nPossible outputs: An assessment blueprint, draft question set, scoring rubric, and a report of feasibility findings and limitations. Those findings would determine whether a larger study or manuscript was justified. This concept does not promise validation, demonstrated learning gains, or improved workplace safety.\n\n\nRadiation protection program evaluation\nHow can radiation protection programs define and evaluate useful indicators of performance? Proposed work would examine candidate measures and the limits of available evidence before testing associations with program outcomes.\n\n\nRadiation safety education\nHow should training connect technical understanding with decisions in practice? Proposed studies would evaluate learning and application using defined outcomes and appropriate research approvals.\n\n\nImplementation and policy\nHow do organizations translate radiation protection requirements into routine practice? This direction would connect health physics with public health policy and program evaluation."
+  },
+  {
+    "objectID": "research.html#research-independence",
+    "href": "research.html#research-independence",
+    "title": "Research",
+    "section": "Research independence",
+    "text": "Research independence\nChristina co-founded CurieLedger, an early-stage radiation safety recordkeeping software company. Work involving digital records, software, or program metrics may overlap with that affiliation. Any such work would require disclosure and institutional conflict-of-interest review before proceeding. No employer data, facilities, funding, or partnerships are committed here."
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Curriculum vitae",
+    "section": "",
+    "text": "Download CV PDF\nSource CV revised October 28, 2026.\nProfessional contact: linkedin.com/in/christina-baynum-ed-d-a498a8160"
+  },
+  {
+    "objectID": "cv.html#education",
+    "href": "cv.html#education",
+    "title": "Curriculum vitae",
+    "section": "Education",
+    "text": "Education\nEdD, Public Health Policy\nNebraska Methodist College · Conferred July 31, 2026\n\nDoctoral scholarly project: Improving Radiation Safety Compliance Through Standardized In-Person Safety Training for University X-ray Operators.\n\nMS, Health Physics\nIllinois Institute of Technology · Conferred December 17, 2022\nBS, Nuclear Engineering Technology\nExcelsior College · Conferred March 15, 2019\nEarlier academic records use the surname Hewett."
+  },
+  {
+    "objectID": "cv.html#teaching-appointment",
+    "href": "cv.html#teaching-appointment",
+    "title": "Curriculum vitae",
+    "section": "Teaching appointment",
+    "text": "Teaching appointment\nAdjunct Professor\nOrangeburg-Calhoun Technical College · 2024–present\n\nDevelop and deliver technical instruction in classroom and learning management system environments using presentations, demonstrations, and applied learning activities.\nConnect technical concepts with advanced manufacturing applications.\nEvaluate student performance, provide feedback, and align instruction and assessments with established course outcomes."
+  },
+  {
+    "objectID": "cv.html#selected-octech-teaching",
+    "href": "cv.html#selected-octech-teaching",
+    "title": "Curriculum vitae",
+    "section": "Selected OCtech teaching",
+    "text": "Selected OCtech teaching\nOrangeburg-Calhoun Technical College\nConfirmed teaching record through Fall 2026.\n\nIMT-210 · Basic Industrial Skills I · Fall 2024, Fall 2025, Fall 2026.\nIMT-131 · Hydraulics and Pneumatics · Fall 2024, Fall 2025, Fall 2026.\nEET-113 · Electrical Circuits I · Fall 2024, Fall 2025.\nEEM-140 · National Electrical Code · Spring 2025.\nEGR-130 · Engr. Tech. App. & Prog. · Spring 2026, Fall 2026."
+  },
+  {
+    "objectID": "cv.html#professional-appointments",
+    "href": "cv.html#professional-appointments",
+    "title": "Curriculum vitae",
+    "section": "Professional appointments",
+    "text": "Professional appointments\nAssociate Radiation Safety Officer\nUniversity of South Carolina · 2024–present\n\nDevelop and deliver radiation safety education and live webinar training for faculty, staff, students, researchers, and technical personnel.\nUse presentations, digital resources, and audience engagement strategies in virtual learning sessions.\nCollaborate with principal investigators on research protocol review and radiation and laser hazard evaluation.\n\nNuclear Medical Science Officer\nUnited States Army · 2022–24\n\nHealth physics education and operational radiation safety practice.\n\nCo-Founder and Radiation Safety Subject-Matter Expert\nCurieLedger · 2026–present\n\nCo-founded an early-stage radiation safety recordkeeping software company.\nContribute radiation safety subject-matter expertise to educational resources and the development of dashboards, metrics, and digital records."
+  },
+  {
+    "objectID": "cv.html#professional-service",
+    "href": "cv.html#professional-service",
+    "title": "Curriculum vitae",
+    "section": "Professional service",
+    "text": "Professional service\nSecretary, Radiation Safety Committee\nUniversity of South Carolina · 2024–present\n\nCommittee administration."
+  },
+  {
+    "objectID": "cv.html#areas-of-preparation",
+    "href": "cv.html#areas-of-preparation",
+    "title": "Curriculum vitae",
+    "section": "Areas of preparation",
+    "text": "Areas of preparation\nOperational health physics; personnel dosimetry; radiation and laser hazard evaluation; research protocol review; public health policy; curriculum planning and evaluation; student assessment; classroom and webinar instruction; D2L Brightspace."
+  },
+  {
+    "objectID": "cv.html#professional-disclosure",
+    "href": "cv.html#professional-disclosure",
+    "title": "Curriculum vitae",
+    "section": "Professional disclosure",
+    "text": "Professional disclosure\nChristina co-founded CurieLedger, an early-stage radiation safety recordkeeping software company. Related academic work may create potential conflicts of interest requiring disclosure and institutional review."
+  },
+  {
+    "objectID": "syllabus-radiation.html",
+    "href": "syllabus-radiation.html",
+    "title": "Applied radiation protection",
+    "section": "",
+    "text": "This original course design has not been taught and is not an approved institutional offering or evidence of teaching effectiveness. It does not confer an operational qualification."
+  },
+  {
+    "objectID": "syllabus-radiation.html#audience-and-format",
+    "href": "syllabus-radiation.html#audience-and-format",
+    "title": "Applied radiation protection",
+    "section": "Audience and format",
+    "text": "Audience and format\nUpper-division undergraduates beginning health physics or a related technical subject. Prerequisites are introductory physics, algebra, unit conversion, and descriptive statistics. A short review introduces independent random variables and variance before the quantitative exercise.\nThe proposed format is six weeks, with one two-hour class meeting and approximately two hours of independent work per week. No credit value is assigned. Students need a calculator or accessible spreadsheet and a way to submit text-based work. No radiation source handling, instrument operation, or employer data collection is involved."
+  },
+  {
+    "objectID": "syllabus-radiation.html#course-purpose",
+    "href": "syllabus-radiation.html#course-purpose",
+    "title": "Applied radiation protection",
+    "section": "Course purpose",
+    "text": "Course purpose\nConnect introductory radiation protection concepts with careful interpretation of measurement information. Students practice calculations, identify assumptions, distinguish counting precision from accuracy, and communicate what the evidence supports. Conceptual discussions do not prescribe real-world controls or operational decisions."
+  },
+  {
+    "objectID": "syllabus-radiation.html#measurable-learning-outcomes",
+    "href": "syllabus-radiation.html#measurable-learning-outcomes",
+    "title": "Applied radiation protection",
+    "section": "Measurable learning outcomes",
+    "text": "Measurable learning outcomes\nBy the end of the proposed course, learners should be able to:\n\nDistinguish recorded count rate, activity, and dose concepts, explaining why they are not interchangeable.\nCalculate gross, background, and net rates and estimated counting standard uncertainty under stated assumptions.\nIdentify limitations and unsupported conclusions in a fictional measurement summary.\nDesign an assessment item aligned with a measurable safety-education learning outcome.\nWrite a concise explanation for a non-specialist with explicit evidence limits."
+  },
+  {
+    "objectID": "syllabus-radiation.html#primary-readings",
+    "href": "syllabus-radiation.html#primary-readings",
+    "title": "Applied radiation protection",
+    "section": "Primary readings",
+    "text": "Primary readings\nThese freely accessible primary sources were checked on 9 November 2026. No textbook purchase is required in this proposed design.\n\nR1: CDC, Radiation and Your Health, introductory vocabulary.\nR2: NIST, SI Units, definitions and notation reference.\nR3: DOE, DOE-HDBK-1122-2009 Part 5, Module 2.03 sections F–G, printed pages 2.03-21–26, on background and uncertainty propagation. This historical technical reference does not set current course, legal, or site procedures.\nR4: NIST, Combining uncertainty components, uncorrelated linear-input example and standard uncertainty meaning.\nR5: Proposed fictional case lesson, original teaching example used to discuss assessment design."
+  },
+  {
+    "objectID": "syllabus-radiation.html#proposed-sequence",
+    "href": "syllabus-radiation.html#proposed-sequence",
+    "title": "Applied radiation protection",
+    "section": "Proposed sequence",
+    "text": "Proposed sequence\n\n\n\nWeek\nPreparation and focus\nClass activity\nSubmission\nOutcomes\n\n\n\n\n1\nR1–R2; radiation vocabulary and quantities\nDistinguish count rate, activity, and dose statements\nConcept check 1 and unit explanation\n1, 3\n\n\n2\nR3 sections F–G; rates and independent counts\nReview variance; calculate rates; list assumptions\nConcept check 2\n1, 2\n\n\n3\nR4; technical exercise\nSolve fictional records; compare uncertainty and signed results\nTechnical exercise and communication note\n2, 3, 5\n\n\n4\nRevisit R3–R4; interpretation limits\nCritique a fictional claim that counting precision proves accuracy or safety\nOne-page evidence critique\n1, 3, 5\n\n\n5\nR5; measurable learning\nDesign an aligned assessment item and feedback criteria\nAssessment-design brief and concept check 3\n3, 4\n\n\n6\nReview prior feedback; integrated communication\nPeer or individual review of a fictional summary\nFinal interpretation portfolio and concept check 4\n1–5"
+  },
+  {
+    "objectID": "syllabus-radiation.html#assessment-design",
+    "href": "syllabus-radiation.html#assessment-design",
+    "title": "Applied radiation protection",
+    "section": "Assessment design",
+    "text": "Assessment design\n\n\n\n\n\n\n\n\n\nAssignment\nProposed weight\nEvidence assessed\nOutcomes\n\n\n\n\nFour equally weighted concept checks\n20%\nQuantities, units, and short-scenario interpretation\n1–3\n\n\nTechnical exercise\n25%\nRates, propagated uncertainty, signed estimate, bounded explanation; use its 20-point rubric\n2, 3, 5\n\n\nEvidence critique\n15%\nUnsupported inference, missing information, accurate replacement wording\n1, 3, 5\n\n\nAssessment-design brief\n15%\nMeasurable outcome, aligned item, usable feedback criteria\n4\n\n\nFinal interpretation portfolio\n25%\nRevised fictional calculation, limitations paragraph, plain-language summary, assessment item, and revision reflection\n1–5\n\n\nTotal\n100%\n\n\n\n\n\nFeedback precedes the final portfolio. Its proposed rubric weights technical accuracy 30%, assumptions and limitations 25%, communication 20%, assessment alignment 15%, and evidence of revision 10%. Assessment evaluates the work produced, not attendance or operational competence."
+  },
+  {
+    "objectID": "syllabus-radiation.html#accessibility-and-institutional-policies",
+    "href": "syllabus-radiation.html#accessibility-and-institutional-policies",
+    "title": "Applied radiation protection",
+    "section": "Accessibility and institutional policies",
+    "text": "Accessibility and institutional policies\nProvide selectable text, labeled tables, plain-text equation alternatives, and accessible downloadable materials. Learners may use a calculator or spreadsheet and explain their method in either format. Pair discussion has an equivalent individual written option without a separate participation penalty. Tasks assess reasoning rather than rapid oral response. Formal accommodations, deadlines, grading scales, academic integrity rules, and other policies follow the actual offering institution; none are invented here.\nAll data and cases are fictional. The course does not estimate dose from uncalibrated counts, determine compliance, or supply field procedures. A future laboratory version would require a separate approved syllabus and the institution’s actual arrangements."
+  },
+  {
+    "objectID": "lesson.html",
+    "href": "lesson.html",
+    "title": "What does attendance tell us?",
+    "section": "",
+    "text": "An original fictional teaching case. No employer, facility, student, or real incident is represented."
+  },
+  {
+    "objectID": "lesson.html#learning-outcomes",
+    "href": "lesson.html#learning-outcomes",
+    "title": "What does attendance tell us?",
+    "section": "Learning outcomes",
+    "text": "Learning outcomes\nLearners will distinguish participation from evidence of learning, identify missing information, and propose one measurable assessment aligned with an instructional outcome."
+  },
+  {
+    "objectID": "lesson.html#scenario",
+    "href": "lesson.html#scenario",
+    "title": "What does attendance tell us?",
+    "section": "Scenario",
+    "text": "Scenario\nA fictional teaching laboratory records attendance at its safety orientation. A supervisor asks whether those records establish that participants can apply the procedures described. No assessment or observation data are available."
+  },
+  {
+    "objectID": "lesson.html#proposed-45-minute-plan",
+    "href": "lesson.html#proposed-45-minute-plan",
+    "title": "What does attendance tell us?",
+    "section": "Proposed 45-minute plan",
+    "text": "Proposed 45-minute plan\n\n\n\n\n\n\n\nTime\nActivity\n\n\n\n\n0–5 minutes\nIndividual response: what does attendance establish?\n\n\n5–15 minutes\nSmall groups identify supported conclusions and missing evidence\n\n\n15–30 minutes\nGroups design one assessment tied to a learning outcome\n\n\n30–40 minutes\nPeer critique of the assessment and its limitations\n\n\n40–45 minutes\nIndividual exit response"
+  },
+  {
+    "objectID": "lesson.html#exit-response",
+    "href": "lesson.html#exit-response",
+    "title": "What does attendance tell us?",
+    "section": "Exit response",
+    "text": "Exit response\nState one supported conclusion, one missing piece of evidence, and one measurable assessment item. Explain which learning outcome the item addresses."
+  },
+  {
+    "objectID": "lesson.html#proposed-feedback-rubric",
+    "href": "lesson.html#proposed-feedback-rubric",
+    "title": "What does attendance tell us?",
+    "section": "Proposed feedback rubric",
+    "text": "Proposed feedback rubric\n\n\n\n\n\n\n\n\nCriterion\nMeets the outcome\nNeeds further development\n\n\n\n\nEvidence\nSeparates attendance from demonstrated learning\nTreats attendance as proof of competence\n\n\nAlignment\nAssessment directly addresses the stated outcome\nAssessment measures an unrelated activity\n\n\nInterpretation\nStates a clear limitation\nClaims more than the evidence supports\n\n\n\nThis lesson has not been presented as a delivered course or evidence of teaching effectiveness."
+  }
+]
